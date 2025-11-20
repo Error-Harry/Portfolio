@@ -8,7 +8,7 @@ const HeroSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
-  const texts = ['Full Stack Developer', 'AI Developer', 'React Specialist', 'Problem Solver'];
+  const texts = ['Data Engineer', 'Gen AI Developer'];
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -58,8 +58,8 @@ const HeroSection = () => {
           </div>
 
           <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto leading-relaxed">
-            Passionate full-stack developer specializing in AI integration, modern web technologies,
-            and creating innovative solutions that drive business growth and user engagement.
+            Data Engineer skilled in Python, SQL, and Airflow with hands-on experience improving ETL pipeline
+            performance and data quality. Proven ability to deliver clean, reliable datasets for analytics and AI workloads.
           </p>
         </div>
 

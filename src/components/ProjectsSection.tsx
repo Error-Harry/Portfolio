@@ -1,19 +1,29 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Github, ExternalLink, Code, Globe } from 'lucide-react';
+import { Github, ExternalLink, Code, Globe, Brain } from 'lucide-react';
 
 const ProjectsSection = () => {
   const projects = [
     {
       title: "Article Synthesizer",
       description:
-        "Streamlined article summarization and content generation using React and RapidAPI. This tool enhances research productivity by providing concise summaries of long-form articles.",
+        "Built an AI-powered article summarizer using React.js and Rapid API, reducing reading time by 60% and improving data aggregation efficiency by 30%.",
       technologies: ["React.js", "Rapid API", "NLP", "Tailwind"],
       githubLink: "https://github.com/Error-Harry/Article-Synthesizer",
       liveLink: "https://article-synthesizer.vercel.app/",
       icon: <Code className="h-6 w-6" />,
-      category: "AI/ML",
+      category: "Gen AI",
+    },
+    {
+      title: "AI Content Generation Platform",
+      description:
+        "Developed a multi-modal LLM platform with streaming chat, PowerPoint generation, PDF extraction, TTS, and REST APIs for chat, file uploads, and content export.",
+      technologies: ["Python", "LangChain", "LangGraph", "RAG", "LLMs", "REST APIs", "TTS"],
+      githubLink: "",
+      liveLink: "",
+      icon: <Brain className="h-6 w-6" />,
+      category: "Gen AI",
     },
     {
       title: "Blog App",
@@ -23,13 +33,13 @@ const ProjectsSection = () => {
       githubLink: "https://github.com/Error-Harry/Medium",
       liveLink: "https://medium-pearl-xi.vercel.app/",
       icon: <Globe className="h-6 w-6" />,
-      category: "Full Stack, Serverless"
+      category: "Full Stack"
     },
   ];
 
   const categoryColors = {
-    "AI/ML": "bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200",
-    "Full Stack, Serverless": "bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200",
+    "Gen AI": "bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200",
+    "Full Stack": "bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200",
   };
 
   return (
@@ -42,7 +52,7 @@ const ProjectsSection = () => {
             </span>
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-            A showcase of my work in AI automation, serverless architecture, and full-stack development.
+            A showcase of my work in Gen AI solutions, data engineering, and full-stack development.
           </p>
         </div>
 
@@ -94,23 +104,27 @@ const ProjectsSection = () => {
 
                   {/* Fixed button section at bottom */}
                   <div className="flex gap-3 mt-auto">
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      className="flex-1 hover:bg-slate-900 hover:text-white dark:hover:bg-white dark:hover:text-slate-900 transition-all duration-300"
-                      onClick={() => window.open(project.githubLink, '_blank')}
-                    >
-                      <Github className="h-4 w-4 mr-2" />
-                      Code
-                    </Button>
-                    <Button
-                      size="sm"
-                      className="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 transition-all duration-300"
-                      onClick={() => window.open(project.liveLink, '_blank')}
-                    >
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      Live Demo
-                    </Button>
+                    {project.githubLink && (
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        className="flex-1 hover:bg-slate-900 hover:text-white dark:hover:bg-white dark:hover:text-slate-900 transition-all duration-300"
+                        onClick={() => window.open(project.githubLink, '_blank')}
+                      >
+                        <Github className="h-4 w-4 mr-2" />
+                        Code
+                      </Button>
+                    )}
+                    {project.liveLink && (
+                      <Button
+                        size="sm"
+                        className="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 transition-all duration-300"
+                        onClick={() => window.open(project.liveLink, '_blank')}
+                      >
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        Live Demo
+                      </Button>
+                    )}
                   </div>
                 </CardContent>
               </Card>

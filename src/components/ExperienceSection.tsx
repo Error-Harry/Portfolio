@@ -5,33 +5,30 @@ import { Calendar, MapPin } from 'lucide-react';
 const ExperienceSection = () => {
   const experiences = [
     {
-      title: "Trainee Engineer",
+      title: "Associate Software Engineer",
       company: "Posit Source Technology",
       location: "Pune, India",
       period: "Jul '24 - Present",
       type: "Full-time",
       responsibilities: [
-        "Built and maintained full-stack features using React, NestJS, GraphQL, PostgreSQL, and BigQuery.",
-        "Enhanced multiple product modules through UI improvements, bug fixes, and unit tests using Jest.",
-        "Optimized Airflow DAGs and developed unit tests using Pytest and Unittest.",
-        "Developed AI-driven tools using FastAPI, LangChain, and LLMs for agreement generation and content automation.",
-        "Revamped NGO website with dynamic content management using PHP, MySQL, and Bootstrap.",
-        "Working on Elpro-360 with focus on RAG, fine-tuning LLMs, and automating Jira to Confluence workflows."
+        "Implemented and maintained Apache Airflow pipelines, improving workflow reliability through enhanced retries, monitoring, and error-handling.",
+        "Created and maintained Pytest/Unittest suites, raising coverage beyond 80% and increasing deployment stability.",
+        "Built an end-to-end document-embedding pipeline processing 10,000+ XML files/day using HuggingFace + Pinecone, reducing semantic search latency from 3s to < 1.5s.",
+        "Engineered ETL for Tally ERP XML, powering a RAG assistant with 70-80% cache hits, reducing LLM cost by 30%."
       ],
-      technologies: ["React", "NestJS", "GraphQL", "PostgreSQL", "BigQuery", "FastAPI", "LangChain", "Airflow", "LLMs", "PHP", "MySQL"]
+      technologies: ["Python", "Apache Airflow", "Pytest", "Unittest", "HuggingFace", "Pinecone", "ETL", "RAG", "LLMs", "XML"]
     },
     {
       title: "Intern",
       company: "Posit Source Technology",
       location: "Pune, India",
-      period: "Jan '24 - Jun '24",
+      period: "Jan '24 - Jul '24",
       type: "Internship",
       responsibilities: [
-        "Built a Kanban project management tool using Next.js, Tailwind CSS, Next UI, and MUI.",
-        "Implemented secure authentication using NextAuth and Prisma ORM with PostgreSQL.",
-        "Contributed to UI performance improvements and team collaboration via GitHub."
+        "Improved PostgreSQL performance via indexing, schema fixes, and Prisma ORM query optimization.",
+        "Implemented secure data access using NextAuth and contributed 300+ production commits across backend services."
       ],
-      technologies: ["Next.js", "Tailwind CSS", "Next UI", "MUI", "NextAuth", "PostgreSQL", "Prisma", "GitHub"]
+      technologies: ["PostgreSQL", "Prisma ORM", "NextAuth", "SQL", "Database Optimization", "Backend Services"]
     }
   ];
 
@@ -45,7 +42,7 @@ const ExperienceSection = () => {
             </span>
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-            A journey through software development, AI solutions, and full-stack engineering.
+            A journey through data engineering, ETL pipelines, and Gen AI solutions.
           </p>
         </div>
 

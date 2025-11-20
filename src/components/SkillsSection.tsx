@@ -7,42 +7,35 @@ const SkillsSection = () => {
   const skillCategories = [
     {
       id: "languages",
-      title: "Languages",
+      title: "Languages & Backend",
       icon: <Code className="h-5 w-5" />,
       skills: [
-        "JavaScript", "TypeScript", "Python", "Java", "C", "C++", "HTML", "CSS", "SQL"
+        "Python", "SQL", "JavaScript", "TypeScript", "C++", "FastAPI", "Node.js"
       ]
     },
     {
-      id: "frameworks",
-      title: "Frameworks & Libraries",
-      icon: <Globe className="h-5 w-5" />,
-      skills: [
-        "ReactJS", "Next.js", "NodeJS", "ExpressJS", "FastAPI", "NestJS", "Bootstrap", "Tailwind CSS", "MUI", "Next UI"
-      ]
-    },
-    {
-      id: "databases",
-      title: "Databases",
+      id: "data-engineering",
+      title: "Data Engineering & Databases",
       icon: <Database className="h-5 w-5" />,
       skills: [
-        "PostgreSQL", "MySQL", "MongoDB", "Prisma ORM", "BigQuery"
+        "ETL/ELT", "Apache Airflow", "PySpark", "Databricks", "BigQuery", 
+        "PostgreSQL", "MySQL", "MongoDB", "Vector Databases"
       ]
     },
     {
-      id: "tools",
-      title: "Tools & Technologies",
+      id: "devops",
+      title: "DevOps, Cloud & Testing",
       icon: <Wrench className="h-5 w-5" />,
       skills: [
-        "Git", "GitHub", "Docker", "Apache Airflow", "Cloudflare Workers", "Vercel", "NextAuth", "Clerk Authentication"
+        "Git", "GitHub", "CI/CD", "GCP", "Pytest", "Unittest"
       ]
     },
     {
-      id: "ai",
-      title: "AI & Machine Learning",
+      id: "genai",
+      title: "GenAI",
       icon: <Brain className="h-5 w-5" />,
       skills: [
-        "LangChain", "LangGraph", "LLMs Integration", "RAG Systems"
+        "HuggingFace", "LangChain", "LangGraph", "RAG", "LLMs"
       ]
     }
   ];
@@ -57,12 +50,12 @@ const SkillsSection = () => {
             </span>
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-            A comprehensive overview of my technical expertise and proficiencies
+            A comprehensive overview of my data engineering and Gen AI expertise
           </p>
         </div>
 
         <Tabs defaultValue="languages" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 md:grid-cols-5 mb-8 bg-white dark:bg-slate-800 p-1 rounded-xl shadow-lg">
+          <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-8 bg-white dark:bg-slate-800 p-1 rounded-xl shadow-lg">
             {skillCategories.map((category) => (
               <TabsTrigger
                 key={category.id}
@@ -94,39 +87,27 @@ const SkillsSection = () => {
           ))}
         </Tabs>
 
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
           <Card className="border-0 shadow-xl bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20">
             <CardHeader className="text-center">
-              <Server className="h-12 w-12 mx-auto text-blue-600 mb-4" />
-              <CardTitle className="text-slate-900 dark:text-white">Backend Development</CardTitle>
+              <Database className="h-12 w-12 mx-auto text-blue-600 mb-4" />
+              <CardTitle className="text-slate-900 dark:text-white">Data Engineering</CardTitle>
             </CardHeader>
             <CardContent className="text-center">
               <p className="text-slate-600 dark:text-slate-400">
-                Expert in building scalable APIs, microservices, and server-side applications
+                Expert in building scalable ETL pipelines, optimizing data workflows, and delivering reliable datasets for analytics and AI
               </p>
             </CardContent>
           </Card>
 
           <Card className="border-0 shadow-xl bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20">
             <CardHeader className="text-center">
-              <Globe className="h-12 w-12 mx-auto text-purple-600 mb-4" />
-              <CardTitle className="text-slate-900 dark:text-white">Frontend Development</CardTitle>
+              <Brain className="h-12 w-12 mx-auto text-purple-600 mb-4" />
+              <CardTitle className="text-slate-900 dark:text-white">Gen AI Solutions</CardTitle>
             </CardHeader>
             <CardContent className="text-center">
               <p className="text-slate-600 dark:text-slate-400">
-                Creating beautiful, responsive, and interactive user interfaces
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-0 shadow-xl bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20">
-            <CardHeader className="text-center">
-              <Brain className="h-12 w-12 mx-auto text-green-600 mb-4" />
-              <CardTitle className="text-slate-900 dark:text-white">AI Integration</CardTitle>
-            </CardHeader>
-            <CardContent className="text-center">
-              <p className="text-slate-600 dark:text-slate-400">
-                Implementing AI solutions, LLMs, and machine learning workflows
+                Implementing AI solutions with LLMs, RAG systems, and machine learning workflows for intelligent automation
               </p>
             </CardContent>
           </Card>
