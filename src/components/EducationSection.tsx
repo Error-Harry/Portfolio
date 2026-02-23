@@ -5,16 +5,16 @@ import { GraduationCap, Calendar, MapPin, Award } from 'lucide-react';
 const EducationSection = () => {
   const education = [
     {
-      degree: "B.E. in Computer Science Engineering",
-      institution: "SVERI's College Of Engineering, Pandharpur, Solapur University",
+      degree: "B.Tech - Computer Science and Engineering",
+      institution: "SVERI's College of Engineering, Pandharpur",
       period: "2020 - 2024",
-      grade: "CGPA: 9.74",
+      grade: "CGPA: 9.55",
       location: "Maharashtra, India",
       type: "Bachelor's Degree"
     },
     {
-      degree: "MSBSHSE (Class XII) - Science",
-      institution: "Walchand College Of Arts And Science, Solapur",
+      degree: "Higher Secondary (Science)",
+      institution: "Walchand College of Arts and Science, Solapur",
       period: "2019 - 2020",
       grade: "Aggregate: 70%",
       location: "Maharashtra, India",

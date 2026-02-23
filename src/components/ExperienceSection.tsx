@@ -8,27 +8,28 @@ const ExperienceSection = () => {
       title: "Associate Software Engineer",
       company: "Posit Source Technology",
       location: "Pune, India",
-      period: "Jul '24 - Present",
+      period: "Jul 2024 – Present",
       type: "Full-time",
       responsibilities: [
-        "Implemented and maintained Apache Airflow pipelines, improving workflow reliability through enhanced retries, monitoring, and error-handling.",
-        "Created and maintained Pytest/Unittest suites, raising coverage beyond 80% and increasing deployment stability.",
-        "Built an end-to-end document-embedding pipeline processing 10,000+ XML files/day using HuggingFace + Pinecone, reducing semantic search latency from 3s to < 1.5s.",
-        "Engineered ETL for Tally ERP XML, powering a RAG assistant with 70-80% cache hits, reducing LLM cost by 30%."
+        "Designed and developed scalable ETL pipelines using PySpark and AWS Glue to process high-volume streaming datasets, generate hourly aggregations, and load optimized outputs into Amazon DynamoDB for low-latency access.",
+        "Implemented event-driven data ingestion architecture using AWS Lambda, API Gateway, and Amazon S3 triggers to orchestrate asynchronous ETL workflows.",
+        "Optimized big data storage and processing by leveraging Parquet columnar format and partitioning strategies on S3, and implemented schema evolution mechanisms to ensure backward-compatible data merging.",
+        "Built a large-scale processing pipeline to embed 10,000+ XML documents, enabling efficient vector generation and semantic retrieval for AI-powered search systems.",
+        "Engineered ETL pipeline for Tally ERP XML data, including parsing, aggregation, and metadata enrichment, enabling a RAG-based assistant with 70–80% cache hit rate and 30% reduction in LLM inference cost."
       ],
-      technologies: ["Python", "Apache Airflow", "Pytest", "Unittest", "HuggingFace", "Pinecone", "ETL", "RAG", "LLMs", "XML"]
+      technologies: ["Python", "PySpark", "AWS Glue", "DynamoDB", "Lambda", "S3", "Apache Airflow", "RAG", "LLMs", "Vector Databases", "ETL"]
     },
     {
-      title: "Intern",
+      title: "Software Engineer Intern",
       company: "Posit Source Technology",
       location: "Pune, India",
-      period: "Jan '24 - Jul '24",
+      period: "Jan 2024 – Jun 2024",
       type: "Internship",
       responsibilities: [
-        "Improved PostgreSQL performance via indexing, schema fixes, and Prisma ORM query optimization.",
-        "Implemented secure data access using NextAuth and contributed 300+ production commits across backend services."
+        "Improved PostgreSQL query performance through indexing, schema refinement, and Prisma ORM query tuning.",
+        "Implemented secure authentication workflows using NextAuth and contributed 300+ commits across backend services."
       ],
-      technologies: ["PostgreSQL", "Prisma ORM", "NextAuth", "SQL", "Database Optimization", "Backend Services"]
+      technologies: ["PostgreSQL", "Prisma ORM", "NextAuth", "SQL", "Backend Services"]
     }
   ];
 

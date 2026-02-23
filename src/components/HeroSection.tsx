@@ -58,8 +58,9 @@ const HeroSection = () => {
           </div>
 
           <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto leading-relaxed">
-            Data Engineer skilled in Python, SQL, and Airflow with hands-on experience improving ETL pipeline
-            performance and data quality. Proven ability to deliver clean, reliable datasets for analytics and AI workloads.
+            Data Engineer with 2 years of experience building and maintaining scalable ETL pipelines across AWS and Azure
+            using Python, SQL, PySpark, Apache Airflow, and Databricks. Experienced in Delta Lake, data warehousing
+            concepts, and performance optimization for large-scale data processing.
           </p>
         </div>
 
