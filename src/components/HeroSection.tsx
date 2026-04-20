@@ -8,7 +8,7 @@ const HeroSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
-  const texts = ['Data Engineer', 'Gen AI Developer'];
+  const texts = ['Data Engineer', 'Generative AI Developer'];
 
   useEffect(() => {
     const timeout = setTimeout(() => {
